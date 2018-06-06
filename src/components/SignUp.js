@@ -24,7 +24,7 @@ background-color:#000;
 ` 
 const Signup = styled.div`
 position: absolute;
-left: 20%;
+left: 22%;
 top: 55%;
 width: 228px;
 height: 43px;
