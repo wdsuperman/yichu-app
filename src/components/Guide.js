@@ -21,16 +21,21 @@ class Guide extends Component {
           slideWidth={1}
           dots={false}
         >
-          {this.state.data.map(val => (
-            <img
+          {this.state.data.map((val,index) => (
+            <div>
+              <img
               src={imgArr[Number(val) - 1]}
               alt=""
               key={val}
               style={{ width: '100%',height:'100vh'}}
             />
+            {index===3?<Link to='/signup'><Go></Go></Link>:''}
+            </div>
+            
+            
           ))}
         </Carousel>
-        <Link to='/signup'><Go></Go></Link>
+        
       </WingBlank>
       </div>
     );
@@ -44,6 +49,5 @@ const Go = styled.div`
   left:50%;
   margin-left:-55px;
   height:30px;
-  background-color:#000;
 `
 export default Guide;

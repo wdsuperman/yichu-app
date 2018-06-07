@@ -20,7 +20,6 @@ left: 4%;
 top: 4%;
 width: 40px;
 height: 40px;
-background-color:#000;
 ` 
 const Signup = styled.div`
 position: absolute;
@@ -28,6 +27,5 @@ left: 22%;
 top: 55%;
 width: 228px;
 height: 43px;
-background-color:#000;
 `
 export default SignUp;

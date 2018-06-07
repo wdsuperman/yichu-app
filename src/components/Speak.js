@@ -10,7 +10,7 @@ class Speak extends Component {
     const titleList = titles.map(t => <div style={{width:'100%'}} key={t.id}>
     <div style={{width:'90%',display:'flex',alignItems:'center',margin:'0 auto',padding:'3% 0'}}>
       <img src={t.src} alt="" style={{width:'15%'}}/>
-      <div  style={{borderBottom:'1px solid #ccc',width:'100%',marginLeft:'5%',paddingBottom:'3%'}}>
+      <div  style={{borderBottom:'1px solid #ccc',width:'100%',marginLeft:'5%',paddingBottom:'2%'}}>
       <div style={{display:'flex',justifyContent:'space-between'}}>
         <p style={{fontSize:'16px'}}>{t.title}</p>
         <p style={{color:'#ccc'}}>{t.time}</p>
