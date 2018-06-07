@@ -6,7 +6,7 @@ const HomeContainer = props => <Home {...props}/>
 
 const mapStateToProps = state =>{
   return{
-    posts:state
+    posts:state.rootReducer
   }
 }
 export default connect(mapStateToProps)(HomeContainer)

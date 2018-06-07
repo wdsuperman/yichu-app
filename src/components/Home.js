@@ -8,12 +8,7 @@ import paihangbang from '../assets/img/排行榜.png'
 import qingdan from '../assets/img/清单.png'
 import shouyinji from '../assets/img/收音机.png'
 import yinyue from '../assets/img/音乐.png'
-import shouye from '../assets/img/down/首页_u39.png'
-import xiaoxi from '../assets/img/down/消息_u45.png'
-import huati from '../assets/img/down/话题_u41.png'
-import wode from '../assets/img/down/我的_u43.png'
-import add from '../assets/img/down/新建_u37.png'
-import {Link} from 'react-router-dom'
+import Footer from './Footer'
 
 class Home extends Component {
   render() {
@@ -59,19 +54,8 @@ class Home extends Component {
             <img src={paihangbang} alt=""/>
           </Base>
           <div>{postList}</div>
+          <Footer />
         </div>
-        <Show style={{width:'100%',display:'flex',justifyContent:'space-around',alignItems:'center'}}>
-        <Link to='/home' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
-        </Link>
-        <Link to='/news' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
-        </Link>
-        <Link to='/news' style={{width:'19%',paddingTop:'18.5%',backgroundRepeat:'no-repeat'}}>
-        </Link>
-        <Link to='/news' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
-        </Link>
-        <Link to='/news' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
-        </Link>
-        </Show>
       </div>
     );
   }
@@ -93,25 +77,5 @@ align-items:center;
 margin-top:10px;
 box-shadow: 0px 3px 4px 0px #ccc inset;
 border-radius: 3px;
-`
-const Show = styled.div`
-position: fixed;
-background-color:#fff;
-bottom: 0;
-height:8%;
-a{
-  background-size: 60%;
-  background-position: center center;
-}
-a:nth-child(1){
-  background-image: url(${shouye})}
-a:nth-child(2){  
-  background-image: url(${xiaoxi})}
-a:nth-child(3){  
-  background-image: url(${add})}
-a:nth-child(4){  
-  background-image: url(${huati})}
-a:nth-child(5){  
-  background-image: url(${wode})}
 `
 export default Home;
