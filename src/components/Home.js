@@ -46,18 +46,20 @@ class Home extends Component {
       <div>
         <Top>
           <img style={{width:'100%'}} src={top} alt=""/>
-          <img style={{width:'90%',left:'5%',top:'8%',position: 'absolute',zIndex:'5'}} src={dbtop} alt=""/>
-          <img style={{width:'100%'}} src={banner} alt=""/>
+          <img style={{width:'90%',left:'5%',top:'34%',position: 'absolute',zIndex:'5'}} src={dbtop} alt=""/>
         </Top>
-        <Base>
-          <img src={yinyue} alt=""/>
-          <img src={bofang} alt=""/>
-          <img src={qingdan} alt=""/>
-          <img src={shouyinji} alt=""/>
-          <img src={paihangbang} alt=""/>
-        </Base>
-        <div>{postList}</div>
-        <Show style={{width:'90%',display:'flex',margin:'0 auto',justifyContent:'space-between',alignItems:'center'}}>
+          <img style={{width:'100%',marginTop:'17%'}} src={banner} alt=""/>
+        <div style={{overflow:'scroll',paddingBottom:'20%'}}>
+          <Base>
+            <img src={yinyue} alt=""/>
+            <img src={bofang} alt=""/>
+            <img src={qingdan} alt=""/>
+            <img src={shouyinji} alt=""/>
+            <img src={paihangbang} alt=""/>
+          </Base>
+          <div>{postList}</div>
+        </div>
+        <Show style={{width:'100%',display:'flex',justifyContent:'space-around',alignItems:'center'}}>
           <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
           <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
           <span style={{width:'19%',paddingTop:'18.5%',backgroundRepeat:'no-repeat'}}></span>
@@ -69,7 +71,7 @@ class Home extends Component {
   }
 }
 const Top = styled.div`
-position: relative;
+position: fixed;
 `
 const Base = styled.div`
 img{
@@ -87,6 +89,9 @@ box-shadow: 0px 3px 4px 0px #ccc inset;
 border-radius: 3px;
 `
 const Show = styled.div`
+position: fixed;
+background-color:#fff;
+bottom: 0;
 span{
   background-size: 70%;
   background-position: center center;
