@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom'
 import SignUp from './SignUp';
 import Guide from './Guide';
-import Home from './Home';
+import HomeContainer from '../container/HomeContainer';
 
 class Main extends Component {
   render() {
@@ -12,7 +12,7 @@ class Main extends Component {
       <div>
         <Route path="/" exact component={Guide} />
         <Route path="/signup" component={SignUp} />
-        <Route path="/home" component={Home} />
+        <Route path="/home" component={HomeContainer} />
       </div>
     );
   }

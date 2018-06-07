@@ -27,11 +27,6 @@ class Guide extends Component {
               alt=""
               key={val}
               style={{ width: '100%',height:'100vh'}}
-            //   onLoad={() => {
-            //     window.dispatchEvent(new Event('resize'));
-            //     this.setState({ imgHeight: 'auto' });
-            //   }
-            // }
             />
           ))}
         </Carousel>
