@@ -8,6 +8,11 @@ import paihangbang from '../assets/img/排行榜.png'
 import qingdan from '../assets/img/清单.png'
 import shouyinji from '../assets/img/收音机.png'
 import yinyue from '../assets/img/音乐.png'
+import shouye from '../assets/img/down/首页_u39.png'
+import xiaoxi from '../assets/img/down/消息_u45.png'
+import huati from '../assets/img/down/话题_u41.png'
+import wode from '../assets/img/down/我的_u43.png'
+import add from '../assets/img/down/新建_u37.png'
 
 class Home extends Component {
   render() {
@@ -25,7 +30,7 @@ class Home extends Component {
       </div>
     </div>
     <div style={{display:'flex',marginTop:'20px',paddingBottom:'10px',justifyContent:'space-between'}}>
-      <div style={{marginTop:'10px',width:'45%'}}>
+      <div style={{width:'45%'}}>
         <span style={{fontSize:'18px'}}>
           {t.title}
         </span>
@@ -52,6 +57,13 @@ class Home extends Component {
           <img src={paihangbang} alt=""/>
         </Base>
         <div>{postList}</div>
+        <Show style={{width:'90%',display:'flex',margin:'0 auto',justifyContent:'space-between',alignItems:'center'}}>
+          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
+          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
+          <span style={{width:'19%',paddingTop:'18.5%',backgroundRepeat:'no-repeat'}}></span>
+          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
+          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
+        </Show>
       </div>
     );
   }
@@ -73,5 +85,21 @@ align-items:center;
 margin-top:10px;
 box-shadow: 0px 3px 4px 0px #ccc inset;
 border-radius: 3px;
+`
+const Show = styled.div`
+span{
+  background-size: 70%;
+  background-position: center center;
+}
+span:nth-child(1){
+  background-image: url(${shouye})}
+span:nth-child(2){  
+  background-image: url(${xiaoxi})}
+span:nth-child(3){  
+  background-image: url(${add})}
+span:nth-child(4){  
+  background-image: url(${huati})}
+span:nth-child(5){  
+  background-image: url(${wode})}
 `
 export default Home;
