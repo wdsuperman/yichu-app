@@ -13,6 +13,7 @@ import xiaoxi from '../assets/img/down/消息_u45.png'
 import huati from '../assets/img/down/话题_u41.png'
 import wode from '../assets/img/down/我的_u43.png'
 import add from '../assets/img/down/新建_u37.png'
+import {Link} from 'react-router-dom'
 
 class Home extends Component {
   render() {
@@ -49,7 +50,7 @@ class Home extends Component {
           <img style={{width:'90%',left:'5%',top:'34%',position: 'absolute',zIndex:'5'}} src={dbtop} alt=""/>
         </Top>
           <img style={{width:'100%',marginTop:'17%'}} src={banner} alt=""/>
-        <div style={{overflow:'scroll',paddingBottom:'20%'}}>
+        <div style={{overflow:'scroll',paddingBottom:'15%'}}>
           <Base>
             <img src={yinyue} alt=""/>
             <img src={bofang} alt=""/>
@@ -60,11 +61,16 @@ class Home extends Component {
           <div>{postList}</div>
         </div>
         <Show style={{width:'100%',display:'flex',justifyContent:'space-around',alignItems:'center'}}>
-          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
-          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
-          <span style={{width:'19%',paddingTop:'18.5%',backgroundRepeat:'no-repeat'}}></span>
-          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
-          <span style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}></span>
+        <Link to='/home' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
+        </Link>
+        <Link to='/news' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
+        </Link>
+        <Link to='/news' style={{width:'19%',paddingTop:'18.5%',backgroundRepeat:'no-repeat'}}>
+        </Link>
+        <Link to='/news' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
+        </Link>
+        <Link to='/news' style={{width:'10%',paddingTop:'17.5%',backgroundRepeat:'no-repeat'}}>
+        </Link>
         </Show>
       </div>
     );
@@ -92,19 +98,20 @@ const Show = styled.div`
 position: fixed;
 background-color:#fff;
 bottom: 0;
-span{
-  background-size: 70%;
+height:8%;
+a{
+  background-size: 60%;
   background-position: center center;
 }
-span:nth-child(1){
+a:nth-child(1){
   background-image: url(${shouye})}
-span:nth-child(2){  
+a:nth-child(2){  
   background-image: url(${xiaoxi})}
-span:nth-child(3){  
+a:nth-child(3){  
   background-image: url(${add})}
-span:nth-child(4){  
+a:nth-child(4){  
   background-image: url(${huati})}
-span:nth-child(5){  
+a:nth-child(5){  
   background-image: url(${wode})}
 `
 export default Home;
