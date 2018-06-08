@@ -17,7 +17,7 @@ class Table extends Component {
     </div> )
     return (
       <div>
-        <div style={{paddingBottom:'18%'}} >
+        <div style={{paddingBottom:'18%',backgroundColor:'#F5F5F5'}} >
           <div style={{backgroundImage:`url(${top})`,paddingTop:'6%',paddingBottom:'6%',backgroundSize:'cover',width:'100%'}}>
             <div style={{width:'100%',display:'flex',justifyContent:'space-around'}}>
               <div><NavLink style={{color:'black'}} to='/topic' exact activeStyle={{color:'#fff'}}>推荐</NavLink></div>
