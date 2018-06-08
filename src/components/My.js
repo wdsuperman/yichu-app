@@ -40,7 +40,7 @@ class My extends Component {
               </p>
             </div>
         </div>
-        <div style={{width:'90%',margin:'0 auto'}} >
+        <div style={{width:'90%',margin:'0 auto',paddingBottom:'10%'}} >
           <p style={{padding:'3% 0'}} >我的一处</p>
           <div style={{display:'flex',justifyContent:'space-between'}}>
             <div>
