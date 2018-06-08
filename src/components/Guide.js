@@ -35,7 +35,6 @@ class Guide extends Component {
             
           ))}
         </Carousel>
-        
       </WingBlank>
       </div>
     );

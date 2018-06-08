@@ -7,9 +7,10 @@ import Guide from './Guide';
 import HomeContainer from '../container/HomeContainer';
 import News from './News';
 import My from './My';
-import Topic from './Topic';
 import New from './New';
 import SpeakContainer from '../container/SpeakContainer';
+import TopicConyainer from '../container/TopicConyainer';
+import TableContainer from '../container/TableContainer';
 
 class Main extends Component {
   render() {
@@ -20,7 +21,8 @@ class Main extends Component {
         <Route path="/home" component={HomeContainer} />
         <Route path="/news" exact component={News} />
         <Route path="/my" component={My} />
-        <Route path="/topic" component={Topic} />
+        <Route path="/topic" exact component={TopicConyainer} />
+        <Route path="/topic/table" component={TableContainer} />
         <Route path="/new" component={New} />
         <Route path="/news/speak" component={SpeakContainer} />
       </div>

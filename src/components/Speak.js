@@ -30,7 +30,7 @@ class Speak extends Component {
         <div style={{width:'100%',textAlign:'center',backgroundColor:'#ccc',padding:'2% 0'}}>
           <input type="text" placeholder='假的不能搜索' style={{outline:'0',border:'0',borderRadius:'5px',width:'90%',fontSize:'16px',height:'20%',textIndent:'5px'}}/ >
         </div>
-        <div>
+        <div style={{marginBottom:'18%'}}>
           {titleList}
         </div>
         <Footer />
